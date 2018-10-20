@@ -10,12 +10,12 @@ The main business logic of the app is implemented in an Angular service called `
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.0.1.
 
-
 [Lite-server](https://github.com/johnpapa/lite-server) makes it easy to check out the static website that is generated for code coverage metrics. `npm install -g lite-server`.
 
-## Development server
+## Run the application
+Install project dependencies with npm: `npm install`.
 
-Check out the app by running `npm start`. It spins up a dev server and opens a browser window on `http://localhost:4200/`. 
+Then you can run the app with `npm start`. It spins up a dev server and opens a browser window on `http://localhost:4200/`. 
 
 ## Build
 
@@ -33,8 +33,8 @@ Use lite server to easily view the code coverage metrics. `lite-server --baseDir
 
 ## Running end-to-end tests
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+`npm run e2e` - execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
 
 ## Further help
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+To get more help on the Angular CLI use `ng help` (requires Angular CLI tools to be installed globally) or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).

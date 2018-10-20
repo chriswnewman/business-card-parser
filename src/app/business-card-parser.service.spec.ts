@@ -24,6 +24,9 @@ describe('BusinessCardParser', () => {
       );
       expect(ci).toEqual(jasmine.any(ContactInfo));
       expect(ci).toEqual(new ContactInfo('Mike Smith', '4105551234', 'msmith@asymmetrik.com'));
+      expect(ci.getName()).toEqual('Mike Smith');
+      expect(ci.getPhoneNumber()).toEqual('4105551234');
+      expect(ci.getEmailAddress()).toEqual('msmith@asymmetrik.com');
     });
 
     it('should correctly handle example 2', () => {
@@ -40,6 +43,9 @@ describe('BusinessCardParser', () => {
       );
       expect(ci).toEqual(jasmine.any(ContactInfo));
       expect(ci).toEqual(new ContactInfo('Lisa Haung', '4105551234', 'lisa.haung@foobartech.com'));
+      expect(ci.getName()).toEqual('Lisa Haung');
+      expect(ci.getPhoneNumber()).toEqual('4105551234');
+      expect(ci.getEmailAddress()).toEqual('lisa.haung@foobartech.com');
     });
 
     it('should correctly handle example 3', () => {
@@ -58,6 +64,9 @@ describe('BusinessCardParser', () => {
       );
       expect(ci).toEqual(jasmine.any(ContactInfo));
       expect(ci).toEqual(new ContactInfo('Arthur Wilson', '17035551259', 'awilson@abctech.com'));
+      expect(ci.getName()).toEqual('Arthur Wilson');
+      expect(ci.getPhoneNumber()).toEqual('17035551259');
+      expect(ci.getEmailAddress()).toEqual('awilson@abctech.com');
     });
   });
 
