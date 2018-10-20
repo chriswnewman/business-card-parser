@@ -1,12 +1,28 @@
 <div class="row">
   <div class="col-6">
-    <textarea name="" id="" cols="30" rows="10" [formControl]="textarea"></textarea>
+    <textarea name="" id="" cols="30" rows="11" [formControl]="textarea"></textarea>
+    <pre *ngIf="output">
+ContactInfo: {{ '{' }}
+  Name: {{output.getName()}}
+  Phone: {{output.getPhoneNumber()}}
+  Email: {{output.getEmailAddress()}}
+{{ '}' }}
+    </pre>
   </div>
   <div class="col-6">
-    <pre *ngIf="output">
-      Name: {{output.getName()}}
-      Phone: {{output.getPhoneNumber()}}
-      Email: {{output.getEmailAddress()}}
-    </pre>
+    <div class="business-card p-4 text-center">
+      <div class="content" *ngIf="output">
+        <h1 class="mb-5">{{output.getName()}}</h1>
+
+        <p class="d-flex align-items-end justify-content-start mb-2">
+          <i class="material-icons">phone_iphone</i>
+          {{output.getPhoneNumber()}}</p>
+
+        <p class="d-flex align-items-end justify-content-start">
+            <i class="material-icons">mail_outline</i>
+            {{output.getEmailAddress()}}</p>
+
+      </div>
+    </div>
   </div>
 </div>

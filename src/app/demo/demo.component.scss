@@ -1,0 +1,17 @@
+$card-height: 200px;
+$card-width: 400px;
+$footer-height: 75px;
+
+.business-card {
+  width: $card-width;
+  height: $card-height;
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+
+  background-image: url("http://www.transparenttextures.com/patterns/brushed-alum.png");
+  .content{
+    width: 100%;
+    height: 100%;
+  }
+}
+
+
