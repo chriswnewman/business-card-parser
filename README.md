@@ -19,7 +19,9 @@ Then you can run the app with `npm start`. It spins up a dev server and opens a 
 
 ## Build
 
-`npm run build` - Build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+`npm run build` - Build the project. The build artifacts will be stored in the `dist/` directory. 
+
+`npm run build:prod` - Uses the `--prod` flag for a production build.
 
 ## Unit tests and code coverage
 
