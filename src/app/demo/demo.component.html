@@ -1,0 +1,12 @@
+<div class="row">
+  <div class="col-6">
+    <textarea name="" id="" cols="30" rows="10" [formControl]="textarea"></textarea>
+  </div>
+  <div class="col-6">
+    <pre *ngIf="output">
+      Name: {{output.getName()}}
+      Phone: {{output.getPhoneNumber()}}
+      Email: {{output.getEmailAddress()}}
+    </pre>
+  </div>
+</div>
