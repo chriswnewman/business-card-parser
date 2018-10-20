@@ -18,9 +18,9 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have as title 'business-card-parser'`, () => {
+  it(`should have as title 'Business Card Parser'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.debugElement.componentInstance;
-    expect(app.title).toEqual('business-card-parser');
+    expect(app.title).toEqual('Business Card Parser');
   });
 });

@@ -12,7 +12,7 @@ import { ContactInfo } from '../contact-info';
 })
 export class DemoComponent implements OnInit {
   /** debounce time for textarea */
-  private DEBOUNCE_TIME = 200;
+  private DEBOUNCE_TIME = 0;
 
   /** ContactInfo object that gets displayed in the view */
   public output: ContactInfo;

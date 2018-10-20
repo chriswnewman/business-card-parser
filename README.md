@@ -1,22 +1,35 @@
 # BusinessCardParser
 
+This project was created for [Asymmetrik's programming challenge #1](https://asymmetrik.com/programming-challenges/#silk-accordion-0-0).
+
+The main business logic of the app is implemented in an Angular service called `BusinessCardParser`.
+
+`DemoComponent` serves as an example of an Angular component consuming the `BusinessCardParser` service.
+
+## Tools and Framework
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.0.1.
+
+
+[Lite-server](https://github.com/johnpapa/lite-server) makes it easy to check out the static website that is generated for code coverage metrics. `npm install -g lite-server`.
 
 ## Development server
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
-
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Check out the app by running `npm start`. It spins up a dev server and opens a browser window on `http://localhost:4200/`. 
 
 ## Build
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+`npm run build` - Build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
 
-## Running unit tests
+## Unit tests and code coverage
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+`npm run test` - Execute unit tests and generate code coverage via [Karma](https://karma-runner.github.io). 
+
+Use lite server to easily view the code coverage metrics. `lite-server --baseDir="coverage"`
+
+## Documentation
+
+`npm run compodoc` - generate documentation via [Compodoc](https://compodoc.app/). Documentation will be stored in `docs/` and served on localhost:8080).
 
 ## Running end-to-end tests
 
