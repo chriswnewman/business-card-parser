@@ -31,7 +31,7 @@ Use lite server to easily view the code coverage metrics. `lite-server --baseDir
 
 ## Documentation
 
-`npm run compodoc` - generate documentation via [Compodoc](https://compodoc.app/). Documentation will be stored in `docs/` and served on localhost:8080).
+`npm run compodoc` - generate documentation via [Compodoc](https://compodoc.app/). Documentation will be stored in `docs/` and served on localhost:8080.
 
 ## Running end-to-end tests
 
